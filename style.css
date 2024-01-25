@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor1: white;
+    --cor-oficial: #335EEA;
+    --cor2: #8897B3;
+    --cor3: #586478f0;
+    --cor4: #E1E7FC;
+
+    --font-padrao: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: var(--cor2);
+}
+
+a:hover{
+    color: white;
+}
+
+body{
+    background: linear-gradient(to top, #e8ecfe 90%, white);
+    font-family: var(--font-padrao);
+    background-attachment: fixed;
+}
+
+#container{
+    background-color: var(--cor1);
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 5.6em; 
+    width: 80.1em;
+    height: 724px;  
+}
+header{
+    margin: 0 7.6em;
+}
+
+.logo{
+    color: var(--cor-oficial);
+    padding-top: 26px;
+    font-size: 1.6em;
+}
+
+#logo, #menu{
+    display: inline-block;
+}
+
+#menu{
+    margin-left: 500px;
+    
+}
+
+#menu li {
+    list-style: none;
+    display: inline;
+   color: var(--cor2);
+   text-decoration: none;
+   margin-left: 30px;
+   transition: background 0.2s;
+}
+
+#menu li a{
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#menu li a:hover{
+    background-color: #5b6895a9;  
+}
+
+/* ----------------------------------------------*/
+
+section{ 
+    padding: 10px;
+    margin-left: 120px;
+    width: 400px;
+    margin-top: 212px;
+    margin-bottom: 185px;
+}
+
+#title{
+    font-weight: normal;
+    font-size: 2.7em;
+}
+
+.semi-logo{
+    color: var(--cor-oficial);
+}
+
+section p{
+    margin-top: 35px;
+    color: var(--cor3);
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.button1{
+    width: 180px;
+    height: 54px;
+    border-radius: 8px;
+    margin-top: 45px;
+    background-color: var(--cor-oficial);
+    border: 0;
+    color: white;
+    transition: background 0.2s;
+    font-weight: bold;
+}
+
+button:hover{
+    background-color: #0a43fe;
+}
+
+.button2{
+    background-color: var(--cor4);
+    width: 150px;
+    height: 54px;
+    margin-left: 18px;
+    font-weight: bold;
+    border: 0;
+    border-radius: 8px;
+    color: #374E9C;
+    transition: background 0.2s;
+}
+
+.button2:hover{
+    background-color: #5974d7b6;
+    color: white;
+}
+
+section, #imagem{
+    display: inline-block;
+}
+
+#imagem{
+    text-align: right;
+    margin-left: 230px;
+}
+
+#imagem img{
+    width: 470px;
+}
