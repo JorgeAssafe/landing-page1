@@ -23,7 +23,8 @@
 .light{
     --bg-color: linear-gradient(to top, #121214bf, #121214);
     --bg-container: #2a2a34;
-    --text-color: var(--cor4);
+    --text-color1: #e1e7fcca;
+    --text-color2: #e1e7fc;
     --cor-oficial: #4b75ff;
     --button: rgba(255, 255, 255, 0.801);
     --button-img: url(./assets/moon-stars.svg);
@@ -72,13 +73,19 @@ header{
     border-radius: 4px;
 }
 
+#button-change:hover{
+    background: #d6d6fd8c;
+    width: 50px;
+    height: 25px;
+    border-radius: 4px;
+}
+
 #logo, #menu, #button-change{
     display: inline-block;
 }
 
 #menu{
     margin-left: 250px;
-    
 }
 
 #menu li {
@@ -94,6 +101,7 @@ header{
     padding: 10px;
     border-radius: 8px;
     color: var(--text-color1);
+    color: var(--text-color2);
     text-decoration: none;
 }
 
@@ -116,6 +124,7 @@ section{
     font-weight: normal;
     font-size: 2.7em;
     color: var(--text-color2);
+    color: var(--text-color2);
 }
 
 .semi-logo{
@@ -127,6 +136,7 @@ section p{
     color: var(--text-color1);
     font-size: 18px;
     line-height: 25px;
+    color: var(--text-color1);
 }
 
 .button1{
