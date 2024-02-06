@@ -4,139 +4,98 @@
     box-sizing: border-box;
 }
 
-:root{
-    --cor1: white;
-    --cor-oficial: #335EEA;
-    --cor2: #8897B3;
-    --cor3: #586478f0;
-    --cor4: #E1E7FC;
-    --bg-color: linear-gradient(to top, #e8ecfe 90%, white);
-    --bg-container: var(--cor1);
-    --text-color1: #586478f0;
-    --text-color2: black;
-    --button: #6666fc6d;
-    --button-img: url(./assets/sun.svg);
-    
-    --font-padrao: Arial, Helvetica, sans-serif;
-}
-
-.light{
-    --bg-color: linear-gradient(to top, #121214bf, #121214);
-    --bg-container: #2a2a34;
-    --text-color1: #e1e7fcca;
-    --text-color2: #e1e7fc;
-    --cor-oficial: #4b75ff;
-    --button: rgba(255, 255, 255, 0.801);
-    --button-img: url(./assets/moon-stars.svg);
-}
-
-
-
-a:hover{
-    color: white;
-}
-
 body{
-    background: var(--bg-color);
-    font-family: var(--font-padrao);
-    background-attachment: fixed;
-    
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to top, #d0d7f7 90%, white);
 }
 
 #container{
-    background-color: var(--bg-container);
-    border-radius: 20px;
-    margin: auto;
-    margin-top: 5.6em; 
     width: 80.1em;
-    height: 724px;  
+    margin: auto;
+    margin-top: 5.6em;
+    margin-bottom: 5.6em;
+    background-color: white;
+    border-radius: 20px;
+    height: 724px; 
 }
+
 header{
-    margin: 0 7.6em;
+    display: flex;
+    justify-content: space-between;
+    padding: 23px 100px;
+    align-items: center;
 }
 
-.logo{
-    color: var(--cor-oficial);
-    padding-top: 26px;
-    font-size: 1.6em;
-}
-
-#button-change{
-    margin: 0 50px 0 170px;
+header h2{
+    color: #335EEA;
+    font-size: 1.8em;
 }
 
 #button-change button{
-    background: var(--button-img) var(--button) no-repeat center;
     width: 50px;
     height: 25px;
     border: 0;
     border-radius: 4px;
+    background: url(./assets/sun.svg) #6666fc6d no-repeat center;
 }
 
-#button-change:hover{
-    background: #d6d6fd8c;
+#button-change button:hover{
+    background: url(./assets/sun.svg) no-repeat center #4e4ef56d;
     width: 50px;
     height: 25px;
     border-radius: 4px;
+    cursor: pointer;
 }
 
-#logo, #menu, #button-change{
-    display: inline-block;
-}
-
-#menu{
-    margin-left: 250px;
-}
-
-#menu li {
+ul{
+    display: flex;
     list-style: none;
-    display: inline;
-   text-decoration: none;
-   margin-left: 30px;
-   
-   transition: background 0.2s;
+    gap: 45px;
 }
 
-#menu li a{
-    padding: 10px;
-    border-radius: 8px;
-    color: var(--text-color1);
-    color: var(--text-color1);
+ul li a{
     text-decoration: none;
-}
-
-#menu li a:hover{
-    background-color: #5b6895a9;  
-    color: var(--cor1);
-}
-
-/* ----------------------------------------------*/
-
-section{ 
+    color: #586478f0;
     padding: 10px;
-    margin-left: 120px;
-    width: 400px;
-    margin-top: 212px;
-    margin-bottom: 185px;
+    font-size: 1.1em;
+    border-radius: 8px;
 }
 
-#title{
+ul li a:hover{
+    background: #5b6895a9;
+    color: white;
+}
+
+/*tratando do main*/
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    padding: 0 0 0 105px;
+    align-items: center;
+    gap: 235px;
+}
+
+aside h1{
+    font-size: 2.5em;
     font-weight: normal;
-    font-size: 2.7em;
-    color: var(--text-color2);
-    color: var(--text-color2);
+    line-height: 55px;
 }
 
-.semi-logo{
-    color: var(--cor-oficial);
+h1 span{
+    color: #335EEA;
 }
 
-section p{
-    margin-top: 35px;
-    color: var(--text-color1);
-    font-size: 18px;
+p{
+    margin-top: 30px;
+    color: rgb(72, 81, 97);
+    font-size: 19px;
     line-height: 25px;
-    color: var(--text-color1);
+}
+
+#button-aside{
+    margin-top: 30px;
 }
 
 .button1{
@@ -144,19 +103,19 @@ section p{
     height: 54px;
     border-radius: 8px;
     margin-top: 45px;
-    background-color: var(--cor-oficial);
+    background-color: #335EEA;
     border: 0;
-    color: var(--cor1);
-    transition: background 0.2s;
+    color: white;
     font-weight: bold;
+    transition: background 0.2s;
 }
 
-button:hover{
+.button1:hover{
     background-color: #0a43fe;
+    cursor: pointer;
 }
 
 .button2{
-    background-color: var(--cor4);
     width: 150px;
     height: 54px;
     margin-left: 18px;
@@ -164,23 +123,17 @@ button:hover{
     border: 0;
     border-radius: 8px;
     color: #374E9C;
+    background-color: #E1E7FC;
     transition: background 0.2s;
 }
 
 .button2:hover{
     background-color: #5974d7b6;
-    color: var(--cor1);
+    color: white;
+    cursor: pointer;
 }
 
-section, #imagem{
-    display: inline-block;
-}
-
-#imagem{
-    text-align: right;
-    margin-left: 230px;
-}
-
-#imagem img{
-    width: 470px;
+article img{
+    width: 480px;
+    height: 440px;
 }
