@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to top, #d0d7f7 90%, white);
+}
+
+#container{
+    width: 85vw;
+    max-width: 1281px;
+    min-width: 375px;
+    margin: auto;
+    margin-top: 5.6em;
+    margin-bottom: 5.6em;
+    background-color: white;
+    border-radius: 20px;
+    height: 100vh;
+}
+
+#profile{
+    text-align: center;
+    padding: 24px;
+}
+
+#profile img{
+    width: 112px;
+    height: 112px;
+    border-radius: 50%;
+}
+
+#profile p{
+    margin-top: 18px;
+    color: #586478f0;
+}
+
+#texto-about{
+    padding: 20px;
+    width: 60vw;
+    color: rgb(72, 81, 97);
+    margin: auto;
+    text-align: justify;
+    text-indent: 20px;
+}
+
+#texto-about p{
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 765px){
+    #texto-about{
+        margin: auto;
+        text-align: justify;
+        text-indent: 20px;
+        width: 80vw;
+        padding: 20px;
+    }
+
+    
+}
+
