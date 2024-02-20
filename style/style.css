@@ -2,55 +2,29 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body{
     font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(to top, #d0d7f7 90%, white);
 }
 
-#container{
-    width: 80.1em;
-    margin: auto;
-    margin-top: 5.6em;
-    margin-bottom: 5.6em;
-    background-color: white;
-    border-radius: 20px;
-    height: 724px; 
-}
-
-header{
+#nav{
     display: flex;
     justify-content: space-between;
-    padding: 23px 100px;
+    width: 90vw;
+    height: 70px;
+    max-width: 1280px;
+    margin: 0 auto;
     align-items: center;
+    background: white;
 }
 
-header h2{
+#logo{
     color: #335EEA;
     font-size: 1.8em;
-}
-
-#button-change button{
-    width: 50px;
-    height: 25px;
-    border: 0;
-    border-radius: 4px;
-    background: url(./assets/sun.svg) #6666fc6d no-repeat center;
-}
-
-#button-change button:hover{
-    background: url(./assets/sun.svg) no-repeat center #4e4ef56d;
-    width: 50px;
-    height: 25px;
-    border-radius: 4px;
-    cursor: pointer;
 }
 
 ul{
     display: flex;
     list-style: none;
-    gap: 45px;
+    gap: 10px;
 }
 
 ul li a{
@@ -66,6 +40,74 @@ ul li a:hover{
     color: white;
 }
 
+#btn-mobile{
+    cursor: pointer;
+    display: none;
+}
+
+#btn-mobile span{
+        display: block;
+        width: 28px;
+        height: 3px;
+        border-radius: 3px;
+        background: #0a43fe;
+        margin: 5px auto;
+        transition: all .3s;
+}
+
+
+
+@media (max-width: 600px){
+    
+    #btn-mobile{
+        display: block;
+    }
+    
+    #nav-menu{
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        height: 0;
+        transition: .6s;
+        right: 0;
+        background: white;
+        z-index: 1000;
+        overflow-y: hidden;
+        visibility: hidden;
+    }
+    
+    
+    .ativo #nav-menu{
+        display: block;
+        height: calc(100vh - 70px);
+        visibility: visible;
+    }
+
+    .nav-menu-item a{
+        display: flex;
+        padding: 1rem;
+        justify-content: center;
+        border-bottom: solid 1px #ececec;
+        transition: background .3s;
+    }
+
+    .nav-menu-item a:hover{
+        background: #374f9c99;
+    }
+    
+    .ativo .bar:nth-child(1){
+        transform: translateY(8px) rotate(-135deg);
+    }
+    .ativo .bar:nth-child(2){
+        opacity: 0;
+    }
+    .ativo .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+}
+
 /*tratando do main*/
 
 main{
@@ -74,7 +116,7 @@ main{
     margin-top: 100px;
     padding: 0 0 0 105px;
     align-items: center;
-    gap: 235px;
+    justify-content: space-between;
 }
 
 aside h1{

@@ -1,10 +1,10 @@
-function toggleMode () {
-    const html = document.documentElement
-    
-    if (html.classList.contains('light')){
-        html.classList.remove('light')
-    }
-    else {
-        html.classList.add('light')
-    }
+const btnMobile = document.getElementById('btn-mobile');
+
+function toggleMenu () {
+
+    const nav = document.getElementById('nav');
+    nav.classList.toggle('ativo')
+
 }
+
+btnMobile.addEventListener('click', toggleMenu);
