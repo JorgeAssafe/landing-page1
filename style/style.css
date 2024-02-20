@@ -10,7 +10,7 @@
     justify-content: space-between;
     width: 90vw;
     height: 70px;
-    max-width: 1280px;
+    max-width: 1000px;
     margin: 0 auto;
     align-items: center;
     background: white;
@@ -32,11 +32,12 @@ ul li a{
     color: #586478f0;
     padding: 10px;
     font-size: 1.1em;
+    transition: background .3s;
     border-radius: 8px;
 }
 
 ul li a:hover{
-    background: #5b6895a9;
+    background: #5b689569;
     color: white;
 }
 
@@ -55,64 +56,13 @@ ul li a:hover{
         transition: all .3s;
 }
 
-
-
-@media (max-width: 600px){
-    
-    #btn-mobile{
-        display: block;
-    }
-    
-    #nav-menu{
-        display: block;
-        position: absolute;
-        width: 100%;
-        top: 70px;
-        height: 0;
-        transition: .6s;
-        right: 0;
-        background: white;
-        z-index: 1000;
-        overflow-y: hidden;
-        visibility: hidden;
-    }
-    
-    
-    .ativo #nav-menu{
-        display: block;
-        height: calc(100vh - 70px);
-        visibility: visible;
-    }
-
-    .nav-menu-item a{
-        display: flex;
-        padding: 1rem;
-        justify-content: center;
-        border-bottom: solid 1px #ececec;
-        transition: background .3s;
-    }
-
-    .nav-menu-item a:hover{
-        background: #374f9c99;
-    }
-    
-    .ativo .bar:nth-child(1){
-        transform: translateY(8px) rotate(-135deg);
-    }
-    .ativo .bar:nth-child(2){
-        opacity: 0;
-    }
-    .ativo .bar:nth-child(3){
-        transform: translateY(-8px) rotate(-45deg);
-    }
-
-}
-
 /*tratando do main*/
 
 main{
+    gap: 200px;
+    max-width: 1000px;
+    margin: auto;
     display: flex;
-    flex-direction: row;
     margin-top: 100px;
     padding: 0 0 0 105px;
     align-items: center;
@@ -178,4 +128,62 @@ p{
 article img{
     width: 480px;
     height: 440px;
+}
+
+
+@media (max-width: 600px){
+    
+    #btn-mobile{
+        display: block;
+    }
+    
+    #nav-menu{
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        height: 0;
+        transition: .6s;
+        right: 0;
+        background: white;
+        z-index: 1000;
+        overflow-y: hidden;
+        visibility: hidden;
+    }
+    
+    
+    .ativo #nav-menu{
+        display: block;
+        height: calc(100vh - 70px);
+        visibility: visible;
+    }
+
+    .nav-menu-item a{
+        display: flex;
+        padding: 1rem;
+        justify-content: center;
+        border-bottom: solid 1px #ececec;
+        transition: background .3s;
+    }
+
+    .nav-menu-item a:hover{
+        background: #5b689569;
+    }
+    
+    .ativo .bar:nth-child(1){
+        transform: translateY(8px) rotate(-135deg);
+    }
+    .ativo .bar:nth-child(2){
+        opacity: 0;
+    }
+    .ativo .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    /*tratando do contéudo------------------------------------------------------------*/
+
+    main{
+
+    }
+
 }
