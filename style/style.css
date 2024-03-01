@@ -157,7 +157,7 @@ p {
 
   .ativo #nav-menu {
     display: block;
-    height: 120vh;
+    height: calc(100vh - 70px);
     visibility: visible;
   }
 
@@ -187,7 +187,7 @@ p {
 
   #first-section {
     display: flex;
-    margin-top: 0px;
+    margin-top: 100px;
     flex-direction: column-reverse;
     text-align: center;
     width: 90vw;
