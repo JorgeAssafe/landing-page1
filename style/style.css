@@ -16,7 +16,7 @@
   background: white;
 }
 
-#logo {
+.logo {
   color: #335eea;
   font-size: 1.8em;
 }
@@ -141,7 +141,7 @@ p {
     display: block;
   }
 
-  #nav-menu {
+  .nav-menu {
     display: block;
     position: absolute;
     width: 100%;
@@ -155,7 +155,7 @@ p {
     visibility: hidden;
   }
 
-  .ativo #nav-menu {
+  .ativo .nav-menu {
     display: block;
     height: calc(100vh - 70px);
     visibility: visible;
